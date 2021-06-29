@@ -1,0 +1,17 @@
+// JAVA PROGRAM TO PRINT MULTIPLES OF 3 FROM 1 TO 30
+// if number is multiple of both 3 & 5 print your name there
+class sample
+{
+public static void main(String args[])
+{
+int i=1;
+for(i=1;i<=30;i++)  //1   2 3.... 15  16
+{  
+  if(i%3 == 0 && i%5==0)  //3%3==0  && 3%5 !=0
+   System.out.println(i+"  Coding Class   ");
+  else
+     if(i%3==0)  //
+   System.out.println(i); //  3  6  9  12  
+}
+
+}
