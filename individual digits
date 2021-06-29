@@ -1,0 +1,24 @@
+//  read a number & print individual digits
+import java.util.*;
+class digit
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+n=sc.nextInt();          
+int r;                               
+while(n>0)  //  1234
+{
+    r = n%10; //4
+n=n/10; //123
+System.out.println(r+" "+n);
+}
+}
+}
+ /* n---> 1234
+                              4    123
+                              3     12
+                              2     1
+                               1     0 
+ 
