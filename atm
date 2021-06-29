@@ -1,0 +1,35 @@
+//PROGRAM OF ATM , TO READ pinnumber and check password and block card after 3 wrong attempts
+import java.util.*;
+class atm
+{
+public static void main(String args[])
+{
+Scanner sc= new Scanner(System.in);
+int secretpin=2806;
+int pinnumber,i,count=0;
+i=1;
+while(i<=3)
+{
+System.out.println("Enter Pin Number");
+pinnumber=sc.nextInt(); //read pin
+  if (pinnumber == secretpin)
+    {
+       System.out.println("Welcome , pls Enter Amount");
+       break;
+    }
+  else
+    {
+      System.out.println("Invalid Pin!!! Try again.....");
+      count++;  //12
+    }
+i++;
+}
+    if (count ==3)
+       System.out.println("Sorry your Card blocked");
+}
+}    
+
+
+
+
+
